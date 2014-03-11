@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* =============================================
+   Global Styles | Overwrite
+================================================ */
+
+body {
+	background: #fafaf7;
+	background: url("bgrd.png");
+	color: #9494949;
+	font-family: arial;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: #990000;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: center;
+	width: 90%;
+}
+
+h1 { font-size:24px; }
+h2 { font-size:18px; }
+
+h3 {
+	border-bottom: solid 1px #47577c;
+	border-radius: 0 0 0 20px;
+	color: #362B75;
+	font-size: 20px;
+	margin-left: 5px;
+	padding-left: 20px;
+	text-align: left;
+	width: 250px;
+}
+
+h4 {
+	
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	text-align: left;
+	width: 300px;
+}
+
+p {
+	color: #000;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: left;
+	width: 60%
+}
+
+/* Form Styles
+================================================ */
+
+input,
+textarea {
+	float: left;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	}
+
+.gen-form {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.line2 { display: none; }
+
+/* Specific Styles
+================================================ */
+.formInfo {
+	float: left;
+	border: solid 1px #8493b8;
+	border-radius: 5px;
+	background: #edf1f9;
+	margin: 10px;
+	padding: 10px;
+	width: 320px;
+}
+
+.hw { 
+	list-style: none;
+	margin:0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	padding-right:10px;
+	}
+	
+.hw li { display: inline; }
+
+#promoPDP {
+    border-top: 2px solid;
+    border-bottom:  2px solid;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 4px 0 12px 0;
+	padding: 10px 12px;
+	text-align: center;
+    width: 336px;
+}
+
+.results{
+	display: none;
+	margin: 0 auto;
+	padding: 15px;
+	padding-left: 0;
+	width: 60%;
+	z-index: 1;
+}
+
+.results2{
+	background: #fff;
+	border: solid 1px #cdcdcd;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 15px;
+	min-width:99%;
+	z-index: 0;
+}
+
+.sendBtn {
+	background: #bce7b6;
+	border: solid 1px #2f803a;
+	border-radius: 5px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	width: 320px;
+}
+
+.txtOut {
+	background-color: #efeeef;
+	border: solid thin #aaaaaa;
+	color: #333;
+	float:left;
+	font-family: courier;
+	height: 350px;
+	margin-top: 10px;
+	resize: none;
+	width: 100%;
+	z-index: 5;
+}
+
+.txtOut2 {
+	background-color: #efeeef;
+	border: solid thin #aaaaaa;
+	color: #333;
+	float:left;
+	font-family: courier;
+	height: 50px;
+	margin-top: 10px;
+	resize: none;
+	width: 100%;
+	z-index: 5;
+}
+
