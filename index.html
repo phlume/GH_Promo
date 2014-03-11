@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Special Promo Generator</title>
+
+
+<!--<script type="text/javascript" src="js/jscolor.js"></script>-->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script src="promo.js"></script>
+  
+  
+</head>
+<body>
+<h1>Unnamed Promo Generator <br>
+<span style="text-transform:uppercase;font-size:12px;">[ ** I still need a fun acronym to be "Official" ** ]</span></h1>
+<p style="text-align:center;">This tool is to help generate all of the promotional components needed for the short burn and seasonal web specials. When all of the fields are populated, click "Generate" to see a output of the code, as well as a preview of the elements.</p>
+<div id="gen-form" class="gen-form">
+<div class="formInfo">
+<h3>- Promo Information -</h3>
+<h4>Promotional Title <span style="font-size:9px; color:#900;">[ Maximum 36 characters ]</span></h4>
+<input id="title" onClick="SelectAll('title');" style="width: 300px; height: 25px; resize: none;" maxlength="37" value="Swim-Sale event" /><br>
+<div class="line2">
+	<h4>Promotional Title; Line 2: <span style="font-size:9px; color:#900;">[ Maximum 36 characters ]</span></h4>
+	<input id="subtitle" onClick="SelectAll('subtitle');"  style="width: 300px; height: 25px; resize: none;" maxlength="37" value="Enter Sub-Title Here"/><br><br><br>
+</div>
+<h4>Fineprint Body: <span style="font-size:9px; color:#900;">[ Don't include the "bold" title ]</span></h4>
+<textarea id="fp" onClick="SelectAll('fp');" style="width: 300px; height: 70px; resize: none;" >Enter the Fine Print here...</textarea><br>
+<h4>Promo HEX Color:</h4>
+<input id="colored" class="color"  value="d6daff" maxlength="6" style="width: 70px; height: 25px; resize: none;" ></input>
+<div style="border-radius:5px;background:#fff;border:1px solid #8493b8;float:left;margin-left:50px;height:40px;margin-top:5px;position:relative;top:-20px;padding:5px;padding-right:15px;">
+<span style="float:left; margin-left:10px;font-size:12px;">Global E-Spot font color</span><br>
+<input type="radio" name="radval" value="fff" style="" checked="checked" id="white"> <label for="white" style="font-family:arial; line-height:2.5em;font-size:10px; color:#333;float:left;">White Text</label>
+<input type="radio" name="radval" value="000" style="" id="black"> <label for="black" style="font-family:arial; line-height:2.5em; float:left; font-size:10px; color:#333;">Black Text</label>
+
+</div>
+<br><br>
+<h4>PDP Fineprint: <span style="font-size:9px; color:#900;">[ Don't include the "bold" title ]</span></h4>
+<textarea id="pdp" onClick="SelectAll('pdp');" style="width: 300px; height: 70px; resize: none;" >Enter the "PDP specific" Fine Print here...</textarea><br>
+
+<h4>Global E-spot Copy: <span style="font-size:9px; color:#900;">[ Maximum 75 characters ]</span></h4></h4>
+<input id="ges" onClick="SelectAll('ges');" style="width: 300px; height: 25px; resize: none;" maxlength="75" value="Save 20% on stuff >>" /><br>
+<h4>Global E-spot Link:</h4>
+<input id="gesLink" onClick="SelectAll('gesLink');" style="width: 300px; height: 25px; resize: none;" value="Global Espot Link" /><br>
+<div style="border-radius:5px;background:#fff;border:1px solid #8493b8;float:left;margin-left:10px;height:40px;margin-top:5px;position:relative;top:0px;padding:5px;padding-right:10px;">
+<span style="float:left; margin-left:10px;font-size:12px;">Global E-Spot link location</span><br>
+<input type="radio" name="linkval" value="" checked="checked" id="same"> <label for="same" style="font-family:arial; line-height:2.5em;font-size:10px; color:#333;float:left;">Same Window</label>
+<input type="radio" name="linkval" value="" id="new"> <label for="new" style="font-family:arial; line-height:2.5em; float:left; font-size:10px; color:#333;">New Window</label><input type="radio" name="linkval" value="" id="pop"> <label for="pop" style="font-family:arial; line-height:2.5em; float:left; font-size:10px; color:#333;">Pop-Up Window</label>
+
+</div>
+<!--<h4>Expiration Date:</h4>
+<input id="datepick" style="width: 300px; height: 25px; resize: none;" value="June 1, 2013" /><br>-->
+<br><br>
+</div>
+<div class="formInfo">
+<h3>Site-wide Top Banner</h3>
+<h4>Image Path:</h4>
+<input id="topBnr" onClick="SelectAll('topBnr');" style="width: 300px; height: 25px; resize: none;" value="-- full path provided by creative --" /><br>
+<h4><span style="float:left;">POP-Up HTML:</span> <span style="float:right;margin-right:20px;">Height:</span></h4>
+<input id="pop-html" onClick="SelectAll('pop-html');" style="width: 220px; height: 25px; resize: none;margin-right:15px;" value="-- path provided by creative --" />
+<input id="popH" onClick="SelectAll('popH');" style="width: 30px; height: 25px; resize: none;" value="130" maxlength="3"/><br><br><br><br>
+</div>
+<div class="formInfo">
+<h3>Category Banner:</h3>
+<h4>Image Path:</h4>
+<input id="catBnr" onClick="SelectAll('catBnr');" style="width: 300px; height: 25px; resize: none;" value="-- full path provided by creative --" /><br>
+<h4>Image Alt text:</h4>
+<input id="alt" onClick="SelectAll('alt');" style="width: 300px; height: 25px; resize: none;" value="Provided by Copy" />
+<br><br>
+</div>
+<br>
+<div class="sendBtn">
+<button type="button" onClick="gen()" style="float:left;margin-left:50px;">Generate</button>&nbsp;&nbsp;&nbsp;<button type="button" onClick="clean()" style="float:right;margin-right:50px;">Clear Fields</button>
+</form>
+</div>
+</div>
+
+<!-- Secondary page (Results) -->
+
+<div id="results" class="results">
+<button style="margin-left:15px;" type="button" onclick="redo()"> Repeat?</button><br><br>
+<div class="results2" id="output2"></div>
+<div style="float:left;width:48%;margin-top:20px;">
+<h3>Full output:</h3><textarea class="txtOut" id="output1" onClick="SelectAll('output1');"></textarea>
+</div>
+<div style="float:left;width:48%;margin-top:20px;margin-left:20px">
+<h4>Global Espot:</h4>
+<textarea class="txtOut2" id="output3" onClick="SelectAll('output3');"></textarea><br>
+<h4>PDP Code:</h4>
+<textarea class="txtOut2" id="output4" onClick="SelectAll('output4');"></textarea><br>
+<h4>Top Banner Code:</h4>
+<textarea class="txtOut2" id="output5" onClick="SelectAll('output5');"></textarea><br>
+<h4>Category banner Code:</h4>
+<textarea class="txtOut2" id="output6" onClick="SelectAll('output6');"></textarea><br>
+</div>
+</div>
+</body>
+</html>
