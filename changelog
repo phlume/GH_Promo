@@ -1,0 +1,31 @@
+<!-- ***********************************
+* Special Promo Generator Ver 1.2.1
+* Author: Chad Fillion
+* Initial Build 2-5-14.
+* 
+*
+* - updated 2-18-14 CF 1.2.1
+* - added escaping [VERY WET] for special characters
+* - fixed click issue on pop-up html input
+*
+* - RELEASED 2-12-14 Ver 1.0
+* 
+* - update 2-12-14 CF 0.7.5
+* - added radio buttons for global espot
+* - updated output code to receive radio input
+*
+*
+* - update 2-11-14 CF 0.5.0
+* - added better grouping to the layout for the interface
+*
+*
+* - update 2-7-14 CF - Version 0.2.5
+* - fixed sort order of the fields
+* - removed color picker functionality
+* - added radio buttons for font color
+* - added time based random integer for pop-up ID
+*
+*
+* - created 2-5-14 intiial build 0.1.0
+*
+************************************ -->
