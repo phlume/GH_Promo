@@ -1,5 +1,5 @@
 // JavaScript Document
-//$(document).ready(function() {
+	//$(document).ready(function() {
     //$("#datepick").datepicker({dateFormat: 'MM d, yy' });
     // });  
 	//function displayResult(radval)
@@ -113,112 +113,44 @@
 			gesBuild = '<div style="display:inline;float:right;width:auto;text-align:right;padding:0px;padding-bottom:5px;background:#'+pr_colored+';margin-top:5px;"><a href="'+pr_gesLink+'" style="text-decoration:none;" target="'+popLink+'"><span style="padding-left:20px;padding-right:8px;color:#'+fontColor+';text-transform:normal; font-family:Arial;position:relative;top:3px;font-size:12px;">'+pr_ges+'</span></a></div>'
 		}
 		
-		/* Escaping for special characters to be replaced */
-		gesBuild = gesBuild.replace(/[\u0027]/g, '&#39;'); // Apostrophe: ' 
-		gesBuild = gesBuild.replace(/[\u2122]/g, '&#153;'); // trademark: ™
-		gesBuild = gesBuild.replace(/[\u00AE]/g, '&#174;'); // R-Ball: ®
-		gesBuild = gesBuild.replace(/[\u201c]/g, '&#34;'); // Left Double Quote: “ 
-		gesBuild = gesBuild.replace(/[\u201D]/g, '&#34;'); // Right Double Quote: ” 
-		gesBuild = gesBuild.replace(/[\u2018]/g, '&#39;'); // Left Single Quote: ‘ 
-		gesBuild = gesBuild.replace(/[\u2019]/g, '&#39;'); // Right Single Quote: ’ 
-		gesBuild = gesBuild.replace(/[\u00D8]/g, '&#216;'); // "BOrn" Letter: Ø (CAPITAL)
-		gesBuild = gesBuild.replace(/[\u00F8]/g, '&#248;'); // "Born" Letter: Ø (lowercase)
-		gesBuild = gesBuild.replace(/[\u2022]/g, '&#2022;') // Bullet •
-		gesBuild = gesBuild.replace(/[\u2015]/g, '--');
-		gesBuild = gesBuild.replace(/[\u2014]/g, '--');
-		gesBuild = gesBuild.replace(/[\u2013]/g, '--'); // Escaping for Em dashes, En dashes and H Bar
-		gesBuild = gesBuild.replace(/[\u2012]/g, '--');
-		gesBuild = gesBuild.replace(/[\u2011]/g, '-');
-		gesBuild = gesBuild.replace(/[\u2010]/g, '-');
 		
-		/*Global Espot display code (for onscreen) */
-		
+		/*Global Espot display code (for onscreen) */		
 		if (GESPop==true){
 			gesDisplay = '<div style="display:inline;width:auto;text-align:right;padding:0px;padding-bottom:5px;background:#'+pr_colored+';margin-top:5px;"><a href="javascript:void(0)" onclick="window.open(\''+pr_gesLink+'\' ,\'\',\'width='+GESPopW+', height='+GESPopH+', scrollbars=yes, resizable=yes\')" style="text-decoration:none;"><span style="padding-left:20px;padding-right:8px;color:#'+fontColor+';text-transform:normal; font-family:Arial;position:relative;top:3px;font-size:12px;">'+pr_ges+'</span></a></div>'
 		} else {
 			gesDisplay = '<div style="display:inline;width:auto;text-align:right;padding:0px;padding-bottom:5px;background:#'+pr_colored+';margin-top:5px;"><a href="'+pr_gesLink+'" style="text-decoration:none;" target="_blank"><span style="padding-left:20px;padding-right:8px;color:#'+fontColor+';text-transform:normal; font-family:Arial;position:relative;top:3px;font-size:12px;">'+pr_ges+'</span></a></div>'
 		}
 		
-		gesDisplay = gesDisplay.replace(/[\u0027]/g, '&#39;'); // Apostrophe: ' 
-		gesDisplay = gesDisplay.replace(/[\u2122]/g, '&#153;'); // trademark: ™
-		gesDisplay = gesDisplay.replace(/[\u00AE]/g, '&#174;'); // R-Ball: ®
-		gesDisplay = gesDisplay.replace(/[\u201c]/g, '&#34;'); // Left Double Quote: “ 
-		gesDisplay = gesDisplay.replace(/[\u201D]/g, '&#34;'); // Right Double Quote: ” 
-		gesDisplay = gesDisplay.replace(/[\u2018]/g, '&#39;'); // Left Single Quote: ‘ 
-		gesDisplay = gesDisplay.replace(/[\u2019]/g, '&#39;'); // Right Single Quote: ’ 
-		gesDisplay = gesDisplay.replace(/[\u00D8]/g, '&#216;'); // "BOrn" Letter: Ø (CAPITAL)
-		gesDisplay = gesDisplay.replace(/[\u00F8]/g, '&#248;'); // "Born" Letter: Ø (lowercase)
-		gesDisplay = gesDisplay.replace(/[\u2022]/g, '&#2022;') // Bullet •
-		gesDisplay = gesDisplay.replace(/[\u2015]/g, '--');
-		gesDisplay = gesDisplay.replace(/[\u2014]/g, '--');
-		gesDisplay = gesDisplay.replace(/[\u2013]/g, '--'); // Escaping for Em dashes, En dashes and H Bar
-		gesDisplay = gesDisplay.replace(/[\u2012]/g, '--');
-		gesDisplay = gesDisplay.replace(/[\u2011]/g, '-');
-		gesDisplay = gesDisplay.replace(/[\u2010]/g, '-');
-	  
-		/* Top banner build */		
-	  
+		
+		
+		/* Top banner build */			  
 		topBnr = '<div style="width:980px;margin: 0 auto;margin-bottom:12px;"><a href="javascript:void(0)" onClick="window.open(\''+pr_pop+'\',\'\',\'width=330, height='+pr_popH+', scrollbars=no, resizable=no\')">'+topImgPath+'</a></div>';
 	  
-	  	topBnr = topBnr.replace(/[\u0027]/g, '&#39;'); // Apostrophe: ' 
-		topBnr = topBnr.replace(/[\u2122]/g, '&#153;'); // trademark: ™
-		topBnr = topBnr.replace(/[\u00AE]/g, '&#174;'); // R-Ball: ®
-		topBnr = topBnr.replace(/[\u201c]/g, '&#34;'); // Left Double Quote: “ 
-		topBnr = topBnr.replace(/[\u201D]/g, '&#34;'); // Right Double Quote: ” 
-		topBnr = topBnr.replace(/[\u2018]/g, '&#39;'); // Left Single Quote: ‘ 
-		topBnr = topBnr.replace(/[\u2019]/g, '&#39;'); // Right Single Quote: ’ 
-		topBnr = topBnr.replace(/[\u00D8]/g, '&#216;'); // "BOrn" Letter: Ø (CAPITAL)
-		topBnr = topBnr.replace(/[\u00F8]/g, '&#248;'); // "Born" Letter: Ø (lowercase)
-		topBnr = topBnr.replace(/[\u2022]/g, '&#2022;') // Bullet •
-		topBnr = topBnr.replace(/[\u2015]/g, '--');
-		topBnr = topBnr.replace(/[\u2014]/g, '--');
-		topBnr = topBnr.replace(/[\u2013]/g, '--'); // Escaping for Em dashes, En dashes and H Bar
-		topBnr = topBnr.replace(/[\u2012]/g, '--');
-		topBnr = topBnr.replace(/[\u2011]/g, '-');
-		topBnr = topBnr.replace(/[\u2010]/g, '-');
-	  
-		/* Category banner build */	 
-	   
+	  		
+		
+		/* Category banner build */		   
 		catBnr = '<a href="javascript:void(0)" onClick="showContentPopup(\''+uniqueId+'\',\'X\')">'+catImgPath+'</a><div id="'+uniqueId+'" style="display:none; z-index:100;">'+catBnrStyle+'<div class="box"><div class="hr-pop" style="padding-top:2px"></div><span class="title">'+pr_title+'</span><div class="body-txt">'+pr_fp+'</div></div><div class="gwt-PopupPanelGlass" style="position: absolute; left: -800px; top: -500px; visibility: visible; display: block; width: 2666px; height: 3225px; z-index:-200;"></div></div>';
 	  
-	  	catBnr = catBnr.replace(/[\u0027]/g, '&#39;'); // Apostrophe: ' 
-		catBnr = catBnr.replace(/[\u2122]/g, '&#153;'); // trademark: ™
-		catBnr = catBnr.replace(/[\u00AE]/g, '&#174;'); // R-Ball: ®
-		catBnr = catBnr.replace(/[\u201c]/g, '&#34;'); // Left Double Quote: “ 
-		catBnr = catBnr.replace(/[\u201D]/g, '&#34;'); // Right Double Quote: ” 
-		catBnr = catBnr.replace(/[\u2018]/g, '&#39;'); // Left Single Quote: ‘ 
-		catBnr = catBnr.replace(/[\u2019]/g, '&#39;'); // Right Single Quote: ’ 
-		catBnr = catBnr.replace(/[\u00D8]/g, '&#216;'); // "BOrn" Letter: Ø (CAPITAL)
-		catBnr = catBnr.replace(/[\u00F8]/g, '&#248;'); // "Born" Letter: Ø (lowercase)
-		catBnr = catBnr.replace(/[\u2022]/g, '&#2022;') // Bullet •
-		catBnr = catBnr.replace(/[\u2015]/g, '--');
-		catBnr = catBnr.replace(/[\u2014]/g, '--');
-		catBnr = catBnr.replace(/[\u2013]/g, '--'); // Escaping for Em dashes, En dashes and H Bar
-		catBnr = catBnr.replace(/[\u2012]/g, '--');
-		catBnr = catBnr.replace(/[\u2011]/g, '-');
-		catBnr = catBnr.replace(/[\u2010]/g, '-');
-		/* PDP build */	
-	    
+	  		
+		
+		/* PDP build */		    
 		pdpBuild = '<div id="promoPDP" style="border-color:#'+pr_colored+'!important;"><span style="text-transform:uppercase;font-family:georgia;color:#000000;"><b>'+pr_title+':</b></span><span style="text-transform:none;font-family:arial;">&nbsp;'+pr_pdp+'</span></div>';
 	  	  
-		pdpBuild = pdpBuild.replace(/[\u0027]/g, '&#39;'); // Apostrophe: ' 
-		pdpBuild = pdpBuild.replace(/[\u2122]/g, '&#153;'); // trademark: ™
-		pdpBuild = pdpBuild.replace(/[\u00AE]/g, '&#174;'); // R-Ball: ®
-		pdpBuild = pdpBuild.replace(/[\u201c]/g, '&#34;'); // Left Double Quote: “ 
-		pdpBuild = pdpBuild.replace(/[\u201D]/g, '&#34;'); // Right Double Quote: ” 
-		pdpBuild = pdpBuild.replace(/[\u2018]/g, '&#39;'); // Left Single Quote: ‘ 
-		pdpBuild = pdpBuild.replace(/[\u2019]/g, '&#39;'); // Right Single Quote: ’ 
-		pdpBuild = pdpBuild.replace(/[\u00D8]/g, '&#216;'); // "BOrn" Letter: Ø (CAPITAL)
-		pdpBuild = pdpBuild.replace(/[\u00F8]/g, '&#248;'); // "Born" Letter: Ø (lowercase)
-		pdpBuild = pdpBuild.replace(/[\u2022]/g, '&#2022;') // Bullet •
-		pdpBuild = pdpBuild.replace(/[\u2015]/g, '--');
-		pdpBuild = pdpBuild.replace(/[\u2014]/g, '--');
-		pdpBuild = pdpBuild.replace(/[\u2013]/g, '--'); // Escaping for Em dashes, En dashes and H Bar
-		pdpBuild = pdpBuild.replace(/[\u2012]/g, '--');
-		pdpBuild = pdpBuild.replace(/[\u2011]/g, '-');
-		pdpBuild = pdpBuild.replace(/[\u2010]/g, '-');
 		
-	   /* Full code output */
+		
+	   /* Special Character Replacement array */
+	    	
+	var charReplace = [ ['\u0027', '&#39;'], ['\u2122', '&#153;'], ['\u00AE', '&#174;'], ['\u201c', '&#34;'], ['\u201c', '&#34;'], ['\u201D', '&#34;'], ['\u2018', '&#39;'], ['\u2019', '&#39;'], ['\u00D8', '&#216;'], ['\u00F8', '&#248;'], ['\u2022', '&#2022;'], ['\u2015', '--'], ['\u2014', '--'], ['\u2013', '--'], ['\u2012', '--'], ['\u2011', '-'], ['\u2010', '-'] ];
+	
+	charReplace.forEach(function(pair) {
+     	gesBuild = gesBuild.split(pair[0]).join(pair[1]);
+		pdpBuild = pdpBuild.split(pair[0]).join(pair[1]);
+		topBnr = topBnr.split(pair[0]).join(pair[1]);
+		catBnr = catBnr.split(pair[0]).join(pair[1]);
+		});
+				
+				
+		/* Full code output */		
 	  output1 = '<!--Global Espot Code-->\n\n'+gesBuild+'\n\n\n\n\n<!--PDP Code:-->\n\n'+pdpBuild+'\n\n\n\n\n<!--Top Banner Code:-->\n\n'+topBnr+'\n\n\n\n\n<!--Category Banner Code:-->\n\n'+catBnr;
 	  
 	  	  
@@ -247,4 +179,3 @@
 		document.getElementById("gen-form").style.display = 'block';
 	  	document.getElementById("results").style.display = 'none';
 	  }
-	  
