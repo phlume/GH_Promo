@@ -28,4 +28,12 @@ Simply enter the information received into the tool and generate the required co
 **NOTE**<br>
 Elements within this output are *VERY* specific to the server and back-end logic we run on our web site at Garnet Hill. You can use this as a basis for your project, however, the "lightbox" that is generated within the *category* banner is quite specific to the needs of Garnet Hill.
 
-As with everythign on GIT, this is a work in progress. Feel free to offer information/ideas/suggestions on how this tool could be expanded to become a more universal.
+
+
+### Acknowledgements###
+**Special Thanks** to GH [https://www.garnethill.com] for providing the void for wich this filled.
+Thank you to all who have, and might still, contribute(d) to this project.
+
+
+### License###
+**_GH Promo Generator_** by Chad Fillion is licensed under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/copyleft/gpl.html). This applies to all documents and translations in this repository.
