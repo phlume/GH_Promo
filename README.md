@@ -31,7 +31,7 @@ Elements within this output are *VERY* specific to the server and back-end logic
 
 
 ### Acknowledgements###
-**Special Thanks** to GH [https://www.garnethill.com] for providing the void for wich this filled.
+**Special Thanks** to [GH](https://www.garnethill.com) for providing the void for which this filled.
 Thank you to all who have, and might still, contribute(d) to this project.
 
 
